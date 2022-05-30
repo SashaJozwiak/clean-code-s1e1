@@ -12,12 +12,12 @@
   text-align: right;
 }
 
-.header-img {
+.header__img {
   width: 100%;
 }
 
 .header,
-.details {
+.header__details {
   font-family: fantasy, cursive;
 }
 
@@ -35,13 +35,13 @@
   margin: 0 auto 0;
 }
 
-.task {
+.row__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.new-task-wrapper {
+.wrapper__new-task {
   display: flex;
 }
 
@@ -60,7 +60,7 @@ button {
   outline: none;
 }
 
-button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -70,13 +70,13 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
 h3,
-label[for="new-task"] {
+label[for="title__new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -104,7 +104,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+label[for="title__new-task"] {
   display: block;
   margin: 0 0 20px;
 }
@@ -114,7 +114,7 @@ input#new-task {
 }
 
 /* Task list */
-li {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -124,51 +124,51 @@ li {
   align-items: center;
 }
 
-li > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.list__item > input[type="checkbox"] {
   margin: 0 10px;
 }
 
-li > label {
+.list__item > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
+.list__item > input[type="text"] {
   width: 226px;
 }
 
-button.delete img {
+.btn.list__item-delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.btn.list__item-delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.list__items#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.list__items li input[type=text] {
   display: none;
 }
 
-ul li.editmode input[type=text] {
+.list__items li.edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editmode label {
+.list__items li.edit-mode label {
   display: none;
 }
