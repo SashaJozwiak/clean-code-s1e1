@@ -79,7 +79,7 @@ button {
 /* Heading */
 .todo-task__title,
 .completed-task__title,
-.add-task__title_label {
+.add-task__title-label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -89,7 +89,7 @@ button {
   text-transform: uppercase;
 }
 
-.list__item__input_text {
+.list__item-input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -102,17 +102,17 @@ button {
   color: #888;
 }
 
-.list__item__input_text:focus {
+.list__item-input-text:focus {
   color: #333;
 }
 
 /* New Task */
-.add-task__title_label {
+.add-task__title-label {
   display: block;
   margin: 0 0 20px;
 }
 
-.list__item__input_text.row__task.input__row {
+.list__item-input-text.row__task.input__row {
   width: 318px;
 }
 
@@ -131,7 +131,7 @@ button {
   vertical-align: middle;
 }
 
-.list__item > .list__item__checkbox {
+.list__item > .list__item-checkbox {
   margin: 0 10px;
 }
 
@@ -142,7 +142,7 @@ button {
   width: 226px;
 }
 
-.list__item > .list__item__input_text  {
+.list__item > .list__item-input-text  {
   width: 226px;
 }
 
@@ -157,7 +157,7 @@ button {
 }
 
 /* Edit Task */
-.list__items .list__item__input_text {
+.list__items .list__item-input-text {
   display: none;
 }
 
