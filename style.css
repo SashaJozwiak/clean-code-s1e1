@@ -171,7 +171,7 @@ button {
 }
 
 /* Completed */
-.list__items_complete > .list__item .row__task {
+.list__items-complete > .list__item .row__task {
   text-decoration: line-through;
   color: #888;
 }
